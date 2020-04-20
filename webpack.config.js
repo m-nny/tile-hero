@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/index.ts',
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
@@ -22,12 +22,20 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.ts$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader',
         ],
       }
     ]
+  },
+  resolve: {
+    extensions: [ '.ts', '.js' ],
   },
   optimization: {
     moduleIds: 'hashed',
