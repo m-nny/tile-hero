@@ -37,11 +37,16 @@ module.exports = {
         use: [
           'file-loader',
         ],
-      }
+      },
+      {
+        test: /\.json$/,
+        loader: 'file-loader',
+        type: 'javascript/auto'
+      },
     ]
   },
   resolve: {
-    extensions: [ '.ts', '.js' ],
+    extensions: ['.ts', '.js'],
   },
   optimization: {
     moduleIds: 'hashed',

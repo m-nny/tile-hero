@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server"
   },
   "author": "Alibek Manabayev <m-nny@yandex.ru>",
   "license": "MIT",
