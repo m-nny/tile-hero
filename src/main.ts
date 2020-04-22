@@ -30,7 +30,7 @@ class GameScene extends Phaser.Scene {
     let dungeionTileset = this.map.addTilesetImage('0x72_DungeonTilesetII_v1.3', 'dungeon');
     let floor = this.map.createStaticLayer('Floor', dungeionTileset);
     let obstacles = this.createObstacles();
-    
+
     let walls = this.map.createStaticLayer('Walls', dungeionTileset);
     let wallTopings = this.map.createStaticLayer('WallTopings', dungeionTileset);
     this.player = this.map.createFromObjects('Player', 'StartingPoint', { key: 'player' })[0] as any;
@@ -44,6 +44,9 @@ class GameScene extends Phaser.Scene {
     this.cameras.main.setBounds(0, 0, this.map.widthInPixels, this.map.heightInPixels);
 
     this.cameras.main.setZoom(2);
+
+    this.physics.world.createDebugGraphic()
+    this.physics.world.drawDebug = false;
 
     this.input.keyboard.on('keydown_C', () => {
       this.physics.world.debugGraphic.clear();
@@ -92,7 +95,7 @@ let gameConfig: Phaser.Types.Core.GameConfig = {
   physics: {
     default: 'arcade',
     arcade: {
-      debug: true,
+      debug: false,
     }
   },
 

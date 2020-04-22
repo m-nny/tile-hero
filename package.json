@@ -1,11 +1,12 @@
 {
   "name": "tile-hero",
-  "version": "0.0.1",
-  "main": "src/index.js",
+  "version": "0.0.2",
+  "main": "src/index.ts",
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "deploy": "yon run build & gh-pages -d dist"
   },
   "author": "Alibek Manabayev <m-nny@yandex.ru>",
   "license": "MIT",
@@ -17,7 +18,9 @@
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "yarn-or-npm": "^3.0.1",
+    "gh-pages": "^2.2.0"
   },
   "dependencies": {
     "phaser": "^3.22.0"
