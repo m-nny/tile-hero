@@ -34,9 +34,9 @@ class GameScene extends Phaser.Scene {
     let walls = this.map.createStaticLayer('Walls', dungeionTileset);
     let wallTopings = this.map.createStaticLayer('WallTopings', dungeionTileset);
     this.player = this.map.createFromObjects('Player', 'StartingPoint', { key: 'player' })[0] as any;
-    // this.player.setSize(16, 8);
+    this.player.setSize(this.player.width - 4, this.player.height - 4);
     this.physics.add.existing(this.player);
-    this.player.body.setOffset(0, 16);
+    this.player.body.setOffset(2, 20);
 
     this.physics.add.collider(obstacles, this.player);
 
