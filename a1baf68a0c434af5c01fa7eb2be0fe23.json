@@ -513,7 +513,7 @@
                 }, 
                 {
                  "gid":1073742849,
-                 "height":52,
+                 "height":64,
                  "id":46,
                  "name":"Wall",
                  "rotation":0,
@@ -729,7 +729,7 @@
                 }, 
                 {
                  "gid":1025,
-                 "height":36,
+                 "height":32,
                  "id":64,
                  "name":"Wall",
                  "rotation":0,
@@ -737,7 +737,7 @@
                  "visible":true,
                  "width":4,
                  "x":144,
-                 "y":156
+                 "y":152
                 }, 
                 {
                  "gid":1025,
@@ -819,8 +819,8 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":36,
-                 "x":164,
+                 "width":32,
+                 "x":168,
                  "y":156
                 }, 
                 {
@@ -969,7 +969,7 @@
                 }, 
                 {
                  "gid":1025,
-                 "height":80,
+                 "height":64,
                  "id":85,
                  "name":"Wall",
                  "rotation":0,
@@ -1041,7 +1041,7 @@
                 }, 
                 {
                  "gid":1025,
-                 "height":96,
+                 "height":84,
                  "id":91,
                  "name":"Wall",
                  "rotation":0,
@@ -1061,7 +1061,7 @@
                  "visible":true,
                  "width":68,
                  "x":-76,
-                 "y":64
+                 "y":76
                 }, 
                 {
                  "gid":1025,
@@ -1073,7 +1073,7 @@
                  "visible":true,
                  "width":4,
                  "x":-12,
-                 "y":80
+                 "y":92
                 }, 
                 {
                  "gid":1025,
@@ -1085,7 +1085,7 @@
                  "visible":true,
                  "width":48,
                  "x":-12,
-                 "y":80
+                 "y":92
                 }, 
                 {
                  "gid":1025,
@@ -1391,7 +1391,7 @@
          "offsety":36,
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }],
